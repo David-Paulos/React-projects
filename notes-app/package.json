@@ -1,0 +1,20 @@
+{
+  "name": "new-notes-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "nanoid": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-mde": "^11.5.0",
+    "react-scripts": "0.9.5",
+    "react-split": "^2.0.14",
+    "showdown": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
