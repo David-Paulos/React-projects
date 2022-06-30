@@ -1,5 +1,5 @@
 <div align="center">
- <img style="height:256px; width:256px;" src="./logo.svg"></>
+ <img style="height:128px; width:128px;" src="./logo.svg"></>
 </>
 
 # React Projects
