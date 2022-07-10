@@ -1,0 +1,24 @@
+/* ============== FOOTER ==============*/
+.footer {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #30353e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer h2 {
+    text-align: center;
+    padding:1em 1em;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: white;
+}
+.footer__logos {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

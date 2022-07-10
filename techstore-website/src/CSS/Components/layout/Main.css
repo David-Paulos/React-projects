@@ -1,0 +1,177 @@
+/* ============= HEADER ============== */
+header {
+    width:100%;
+    height:70px;
+    background-color: #30353e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 1rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 3;
+}
+header h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.4em;
+    letter-spacing: 0.082em;
+    color: #f4f4f4;
+    font-weight: 800;
+    cursor: pointer;
+}
+.header__shoppingIcon{
+    color: #f3f3f3;
+    transform: scale(1);
+    cursor:pointer;
+    position: fixed;
+    z-index: 3;
+    top: 23px;
+    right:70px;
+}
+.header__shoppingIcon__amount{
+    text-align: center;
+    width: 17px;
+    height: 17px;
+    color: #f3f3f3;
+    background-color: red;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right:88px;
+}
+.header__menuIcon{
+    color: #f3f3f3;
+    transform: scale(1.5);
+    cursor:pointer;
+    position: relative;
+    width:100px;
+}
+/* ============= COUNTDOWN CLOCK ============ */
+.saleClock{
+    background-color: #f2faff;
+    margin-top:70px;
+    width:100%;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.saleClock__title h2{
+    font-size:2em;
+    margin-left:0.5em;
+}
+.saleClock__countdown{
+    width:190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.saleClock__countdown > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.saleClock__countdown h2{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.saleClock__countdown__numbers{
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.saleClock__countdown .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* ============= NAV ============== */
+nav {
+    width: 100%;
+    background-color:#f2faff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 4;
+    animation-name: slideIn;
+    animation-duration:450ms;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    overflow-y: scroll;
+}
+@keyframes slideIn {
+    from{right:-100%}
+    to{right:0%}
+}
+nav.close {
+    width: 100%;
+    background-color: #f2faff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 4;
+    animation-name: slideOut;
+    animation-duration:450ms;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+}
+@keyframes slideOut {
+    from{right:0%}
+    to{right:-100%}
+}
+.nav__closeIcon{
+    position:absolute;
+    top: 2.5em;
+    right: 2.5em;
+    color: #30353e;
+    transform: scale(1.5);
+    cursor:pointer;
+}
+.nav__ul{
+    width:360px;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__ul__li{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:2.7em 0;
+}
+.nav__ul__li:nth-of-type(10){
+    padding-bottom: 10em;
+}
+.nav__ul__li__link{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.4em;
+    letter-spacing: 0.082em;
+    color: #30353e;
+    font-weight: 800;
+    cursor: pointer;  
+}
+.nav__ul__li__link:hover{
+    transition:transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+    transform: translateY(2px);
+}
+.nav__ul__li__link:active{
+    transition:transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+    transform: translateY(4px);
+}
+
