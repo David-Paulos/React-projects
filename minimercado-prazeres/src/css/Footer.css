@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+/* ======= FOOTER ======= */
+.footer{
+    margin-top: 6rem;
+    width:100%;
+    background-color: #525131;
+}
+.footer__title{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+}
+.footer__info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer__contact{
+    margin-bottom: 1rem ;
+    width:250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.footer__icon{
+    transform: scale(3);
+    color: #ffffff ;
+}
+.footer__contact__title{
+    font-size: 1.3rem;
+    color: #ffffff ;
+}
+.footer__contact__mobileNumber{
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ffffff ;
+}
+.footer__contact:hover .footer__icon{
+    transform: scale(3.8);
+    color: #ff412d;
+    transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.footer__contact:hover .footer__icon.phone{
+    transform: scale(3.8);
+    color: #0de51b;
+    transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.footer__rights{
+    width:100%;
+    height:40px;
+    background-color: #def8d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer__rights__h4{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.footer__myInfo{
+    color: black;
+}
+.footer__myInfo:hover{
+    text-decoration: underline;
+}

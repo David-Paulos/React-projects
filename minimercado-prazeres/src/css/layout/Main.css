@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* ========== HEADER ========== */
+.header{
+  width:100%;
+  height:100px;
+  background-color: #00bb0c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 3;
+}
+.header__h1{
+  font-size: 2rem;
+  color: antiquewhite;
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+}
+.header__menuIcon{
+  color: antiquewhite;
+  transform:scale(1.7);
+  cursor: pointer;
+}
+/* ============= NAV ============= */
+.nav{
+  width:100%;
+  background-color:#def8d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 4;
+  animation-name: slideIn;
+  animation-duration:450ms;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes slideIn {
+  from{right:-100%;}
+  to{right:0%;}
+}
+.nav.close{
+  width:100%;
+  background-color:#def8d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 4;
+  animation-name: slideOut;
+  animation-duration:450ms;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes slideOut {
+  from{right:0%;}
+  to{right:-100%;}
+}
+.nav__closeIcon{
+  color: #402e32;
+  transform:scale(1.7);
+  cursor: pointer;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+.nav__ul{
+  width:330px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav__ul__li-link{
+  color:#402e32;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+}
+.nav__ul__li-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  position: absolute;
+  background: #402e32;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav__ul__li-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+/* ========= MEDIA QUERIES ======== */
+@media screen and (min-width: 480px){
+  .nav__ul{
+    width:450px;
+  }
+  .header__h1, .nav__ul__li-link{
+    font-size: 2.8rem;
+  }
+ 
+}

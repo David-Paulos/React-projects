@@ -1,0 +1,31 @@
+/* ========== SERVICOS ========= */
+.servicos{
+    width:100%;
+    min-height:150px;
+    background-color: #eeffe9;
+}
+.servicos__ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.servicos__li{
+    width:140px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.servicos__icon{
+    color:#00bb0c;
+    transform: scale(2.5);
+}
+.servicos__p{
+    color: #402e32;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}

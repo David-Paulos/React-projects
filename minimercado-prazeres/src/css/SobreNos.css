@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.sobreNos{
+    width: 100%;
+    margin-top:99px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sobreNos__video-window{
+    width: 100%;
+    height: 40vh;
+}
+.sobreNos__video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sobreNos__h2{
+    margin-top: 2.5rem;
+    font-size: 2.8rem;
+    font-family: 'Dancing Script', cursive;
+}
+.sobreNos__p{
+    text-align: center ;
+    padding: 2rem 1.5rem;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.sobreNos__h3{
+    margin-top: 2.5rem;
+    font-size: 2.4rem;
+    font-family: 'Dancing Script', cursive;
+}
+.sobreNos__ul{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sobreNos__li{
+    margin-top: 1.5rem;
+    height: 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.sobreNos__li__p-day{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.sobreNos__li__p-hour{
+    text-align: center ;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.sobreNos__phoneButton{
+    align-items: center;
+    appearance: none;
+    background-color: #19d316;
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    height: 64px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+.sobreNos__phoneButton:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.sobreNos__phoneButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.sobreNos__phoneButton:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.sobreNos__phoneButton__icon{
+    color: #fff;
+    transform: scale(2);
+}
+.sobreNos__map{
+    width:80%;
+    height:40vh;
+}
+
+@media screen and (min-width:1000px){
+    .sobreNos__p{
+        width:1000px;
+    }
+    .sobreNos__map, .sobreNos__video-window{
+        height:60vh;
+    }
+}
