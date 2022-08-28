@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.mapContainer{
+    width:100%;
+    height: 100vh;
+}
+.map{
+    width:100%;
+    height:100%;
+}
+.startMarker{
+    width:32px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: url('./Assets/images/point-of-interest.png');
+    background-size: cover;
+}
+.endMarker{
+    width:32px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: url('./Assets/images/flag.png');
+    background-size: cover;
+}
